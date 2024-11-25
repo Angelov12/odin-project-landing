@@ -1,0 +1,193 @@
+:root {
+    --background: #1F2937;
+    --secundary-text: #a7acb3;
+    --main-text: #F9FAF8;
+    --secundario: #F9FAF8;
+    --quotetxt: #1F2937;
+    --quotebg: #e5e7eb;
+    --blue: #3882F6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+}
+p{
+    font-size: 1.8rem;
+}
+.header,.hero{
+    background-color: var(--background);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.header .logo{
+    font-size: 2rem;
+    color: var(--main-text);
+}
+.nav{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--secundary-text);
+    font-size: 1.5rem;
+}
+.nav a:hover{
+    color: var(--main-text);
+}
+.nav a:nth-child(4){
+    border: 1px solid var(--secundary-text);
+    padding: 1rem;
+}
+.nav a:nth-child(4):hover{
+    color: var(--main-text);
+    border-color: var(--main-text);
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    gap: 3rem;  
+}
+.hero-img{
+    height: auto;
+    max-width: 58rem;
+    background-image: cover;
+}
+.hero-text{
+    color: var(--main-text);
+    width: 50rem;
+  
+}
+.hero-text h1{
+    font-size: 4.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+}
+.hero-text p{
+    margin-bottom: 3rem;
+}
+.hero-text a{
+    color: var(--blue);
+    text-decoration: none;
+    border: 2px solid var(--blue);
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+.hero-text a:hover{
+    color: var(--main-text);
+    border-color: var(--main-text);
+}
+main{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 3rem;
+
+}
+main h2{
+    font-size: 2.9rem;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.info-container{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 2rem;
+     width: 30rem;
+}
+.info-container h3{
+    font-size: 2.5rem;
+}
+.snappy-section{
+    display: flex;
+}
+.icons{
+    background-color: var(--secundary-text);
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons img{
+    width: 4rem;
+}
+
+.quote-section{
+    background-color: var(--quotebg);
+    height: 25rem;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.quote-section blockquote{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.quote{
+        font-size: 2.6rem
+}
+.author{
+    font-weight: 900;
+    text-align: end;
+    margin-top: 1rem;
+}
+
+.enroll-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color: var(--blue);
+    height: 15rem;
+    width: 100rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    color: var(--main-text);
+}
+.enroll-section a{
+    text-decoration: none;
+    color: var(--main-text);
+    border: 2px solid var(--main-text);
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.enroll-section a:hover{
+        color: var(--background);
+        border-color: var(--background);
+}
+
+footer{
+    background-color: var(--background);
+    padding: 5rem;
+    color: var(--main-text);
+    text-align: center;
+    margin-top: 10rem;
+    }
+    footer p{
+        font-size: 1.4rem;
+    }
